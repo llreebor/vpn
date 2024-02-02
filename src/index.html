@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>VPN</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/output.css" />
+	</head>
+
+	<body class="h-full text-primary-text">
+		<div class="wrapper flex min-h-full flex-col">
+			<!-- Header -->
+			<header>
+				<div class="container">
+					<div class="flex items-center justify-between py-4">
+						<a href="#"><img src="./img/logo.svg" alt="img" /></a>
+
+						<!-- Desktop menu -->
+						<nav>
+							<ul
+								id="menu"
+								class="z-10 hidden animate-fadeIn items-center gap-6 md:flex"
+							>
+								<!-- Menu Item -->
+								<li>
+									<a
+										class="font-bold transition-colors hover:text-violet-600"
+										href="#"
+									>
+										<span>Top VPN-Anbieter</span>
+									</a>
+								</li>
+								<!-- Menu Item -->
+								<li>
+									<a class="transition-colors hover:text-violet-600" href="#">
+										<span>Ratgeber</span>
+									</a>
+								</li>
+								<!-- Menu Item -->
+								<li>
+									<a class="transition-colors hover:text-violet-600" href="#">
+										<span>Werbehinweis</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+
+						<button
+							id="burger"
+							class="group relative z-20 flex h-5 w-7 flex-col gap-1 md:hidden"
+						>
+							<span
+								class="absolute left-0 top-0 flex h-1 w-7 rounded-full bg-violet-600 transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45 group-[.active]:bg-violet-600"
+							></span>
+							<span
+								class="absolute left-0 top-1/2 flex h-1 w-6 translate-x-0 -translate-y-1/2 rounded-full bg-violet-600 transition-transform group-[.active]:opacity-0"
+							></span>
+							<span
+								class="absolute left-0 bottom-0 flex h-1 w-5 rounded-full bg-violet-600 transition-transform group-[.active]:w-7 group-[.active]:-translate-y-2 group-[.active]:-rotate-45 group-[.active]:bg-violet-600"
+							></span>
+						</button>
+					</div>
+
+					<!-- Mobile menu -->
+					<nav>
+						<ul id="mobile-menu" class="hidden w-full flex-col gap-2 bg-white">
+							<li>
+								<a href="#" class="font-semibold">Top VPN-Anbieter</a>
+							</li>
+
+							<li>
+								<a href="#" class="font-semibold">Ratgeber</a>
+							</li>
+							<li>
+								<a href="#" class="font-semibold">Werbehinweis</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<!-- Main Content -->
+			<main class="flex-auto">
+				<section class="py-5">
+					<div class="container">
+						<div class="grid lg:grid-cols-2">
+							<div class="relative">
+								<img
+									class="absolute right-0 bottom-0 -z-10 w-1/3 md:hidden"
+									src="./img/hero-img.svg"
+									alt="img"
+								/>
+								<h1 class="text-2xl font-bold md:text-4xl">
+									<img class="mr-1 inline" src="./img/flag.png" alt="img" />
+									<span>Die Top 10 VPN-Anbieter 2024</span>
+								</h1>
+								<p class="hidden py-4 md:block">
+									Wir haben die besten VPN-Anbieter für dich getestet und
+									verglichen. Ein VPN hat folgende Vorteile:
+								</p>
+
+								<ul class="mt-4 flex flex-col md:mt-0 md:gap-2">
+									<li class="flex items-start gap-2">
+										<img class="mt-1" src="./img/shield.svg" alt="icon" />
+										<span class="text-sm leading-7 md:text-base">
+											Es schützt deine Privatsphäre und sichert deine Daten,
+											indem es deine IP-Adresse verbirgt
+										</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<img class="mt-1" src="./img/shield.svg" alt="icon" />
+										<span class="text-sm leading-7 md:text-base">
+											Sicheres, verschlüsseltes und privates Surfen im Internet
+										</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<img class="mt-1" src="./img/shield.svg" alt="icon" />
+										<span class="text-sm leading-7 md:text-base">
+											Zugang zu unbegrenzten US-Inhalten (Netflix, Disney+, Sky,
+											DAZN, Torrenting, ...) weltweit
+										</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<img class="mt-1" src="./img/shield.svg" alt="icon" />
+										<span class="text-sm leading-7 md:text-base">
+											Bietet Geschwindigkeiten, die perfekt für
+											HD/4K-Übertragungen geeignet sind
+										</span>
+									</li>
+								</ul>
+
+								<div class="mt-4 flex flex-col gap-4 md:mt-6 md:flex-row">
+									<p class="font-bold">Verfügbar auf</p>
+									<ul class="flex items-center gap-4">
+										<li><img src="./img/hero-icon-1.svg" alt="icon" /></li>
+										<li><img src="./img/hero-icon-2.svg" alt="icon" /></li>
+										<li><img src="./img/hero-icon-3.svg" alt="icon" /></li>
+										<li><img src="./img/hero-icon-4.svg" alt="icon" /></li>
+										<li><img src="./img/hero-icon-5.svg" alt="icon" /></li>
+									</ul>
+								</div>
+							</div>
+							<div class="hidden lg:flex lg:items-center lg:justify-end">
+								<img src="./img/hero-img.svg" alt="img" />
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="py-2">
+					<div class="container">
+						<div class="flex items-center gap-2">
+							<img src="./img/calendar.svg" alt="img" />
+							<p class="text-xs font-medium">
+								Letzte Aktualisierung: Februar 2024
+							</p>
+						</div>
+
+						<div class="mt-8 flex flex-col gap-8">
+							<!-- VPN Item -->
+							<div
+								class="relative rounded border-2 border-primary-border p-5 shadow-small md:flex md:justify-between md:gap-2 lg:px-10"
+							>
+								<div
+									class="absolute left-[-2px] top-[-2px] z-10 flex h-8 overflow-hidden rounded-br rounded-tl bg-secondary-light"
+								>
+									<span
+										class="flex w-10 items-center justify-center bg-secondary text-xl text-white"
+									>
+										1
+									</span>
+									<p
+										class="flex items-center justify-center px-2 font-bold uppercase text-white"
+									>
+										Top VPN 2024
+									</p>
+								</div>
+
+								<div
+									class="mt-7 grid grid-cols-2 gap-3 md:w-32 md:shrink-0 md:grid-cols-1 lg:w-40"
+								>
+									<div class="grid place-content-center">
+										<img
+											class="w-32 md:w-full"
+											src="./img/vpn-1.svg"
+											alt="img"
+										/>
+
+										<p
+											class="mt-5 hidden text-center font-bold text-primary-light md:block"
+										>
+											80 % unserer Nutzer entscheiden sich für diesen
+											VPN-Dienst.
+										</p>
+									</div>
+									<div class="grid place-content-center md:hidden">
+										<img
+											class="h-auto w-20 shrink-0"
+											src="./img/circle-1.png"
+											alt="circle"
+										/>
+									</div>
+								</div>
+
+								<div class="md:w-72 lg:w-[420px]">
+									<ul class="mt-2 flex flex-col gap-1">
+										<li class="flex gap-3">
+											<img src="./img/check.svg" alt="img" />
+											<a class="font-medium text-secondary underline" href="#">
+												Gratis Testzeitraum: 4 Monate kostenlose Nutzung
+											</a>
+										</li>
+										<li class="flex gap-3">
+											<img src="./img/check.svg" alt="img" />
+											<p class="font-medium">
+												4K-Streaming auf Netflix, Amazon Prime, Disney+
+											</p>
+										</li>
+										<li class="flex gap-3">
+											<img src="./img/check.svg" alt="img" />
+											<p class="font-medium">
+												Ultraschnelle Server mit Geschwindigkeiten von 10.000
+												MBit/s
+											</p>
+										</li>
+										<li class="flex gap-3">
+											<img src="./img/check.svg" alt="img" />
+											<p class="font-medium">
+												Sichere Verschlüsselung nach Militär-Standard
+											</p>
+										</li>
+										<li class="flex gap-3">
+											<img src="./img/check.svg" alt="img" />
+											<p class="font-medium">
+												Windows, Mac, Android und iOS kompatibel
+											</p>
+										</li>
+										<li class="flex gap-3">
+											<img src="./img/check.svg" alt="img" />
+											<p class="font-medium">
+												Verbinde bis zu 7 Geräte mit nur einem Abo
+											</p>
+										</li>
+									</ul>
+
+									<div class="mt-4 flex gap-4 pl-8 md:gap-3">
+										<p class="font-bold">Verfügbar auf</p>
+										<ul class="flex items-center gap-2">
+											<li><img src="./img/hero-icon-1.svg" alt="icon" /></li>
+											<li><img src="./img/hero-icon-2.svg" alt="icon" /></li>
+											<li><img src="./img/hero-icon-3.svg" alt="icon" /></li>
+											<li><img src="./img/hero-icon-4.svg" alt="icon" /></li>
+											<li><img src="./img/hero-icon-5.svg" alt="icon" /></li>
+										</ul>
+									</div>
+								</div>
+
+								<p
+									class="mt-5 text-center font-bold text-primary-light md:hidden"
+								>
+									80 % unserer Nutzer entscheiden sich für diesen VPN-Dienst.
+								</p>
+
+								<div
+									class="hidden md:flex md:w-32 md:items-center md:justify-center lg:w-44"
+								>
+									<img
+										class="max-w-[140px]"
+										src="./img/circle-1-large.png"
+										alt="img"
+									/>
+								</div>
+
+								<div
+									class="md:flex md:flex-col-reverse md:justify-center lg:w-[200px]"
+								>
+									<a
+										class="hidden justify-center text-sm font-medium text-link-color underline md:flex"
+										target="_blank"
+										href="https://vpn-scrty.com/?E=YuhANVb5y7Cv98lAG%2BqHmxHWSKyexob9&s1=vecom&s2=direct&s5=1~1clickout~2lp-more-info-link-lean~3Cyberghost&s4=1731-IaZqVGTXlsVyBcZctWO7NW00"
+									>
+										cyberghostvpn.com
+									</a>
+									<a
+										class="my-3 flex items-center justify-center gap-5 rounded bg-secondary-dark py-4 text-lg font-bold uppercase leading-none text-white shadow-button hover:bg-secondary md:p-3 lg:gap-3 lg:p-4"
+										target="_blank"
+										href="https://vpn-scrty.com/?E=YuhANVb5y7Cv98lAG%2BqHmxHWSKyexob9&s1=vecom&s2=direct&s5=1~1clickout~2lp-more-info-link-lean~3Cyberghost&s4=1731-IaZqVGTXlsVyBcZctWO7NW00"
+									>
+										<span class="md:text-center">Zum Anbieter</span>
+										<img src="./img/lnk-arrow.svg" alt="icon" />
+									</a>
+
+									<div class="flex flex-col items-center pb-7 md:pb-2">
+										<p class="text-lg font-bold text-black">Ausgezeichnet</p>
+										<img
+											class="mb-1 max-w-[120px]"
+											src="./img/stars.png"
+											alt="img"
+										/>
+										<img src="./img/trustpilot.svg" alt="img" />
+									</div>
+								</div>
+							</div>
+
+							<!-- VPN Item -->
+							<div
+								class="relative rounded border border-gray-200 p-5 shadow-light md:flex md:justify-between md:gap-2 lg:px-10"
+							>
+								<div
+									class="absolute left-[-2px] top-[-2px] z-10 flex h-8 overflow-hidden rounded-br rounded-tl bg-secondary-light"
+								>
+									<span
+										class="flex w-10 items-center justify-center bg-primary text-xl text-white"
+									>
+										2
+									</span>
+								</div>
+
+								<div
+									class="mt-7 grid grid-cols-2 gap-3 md:w-32 md:shrink-0 md:grid-cols-1 lg:w-40"
+								>
+									<div class="grid place-content-center md:place-content-start">
+										<img
+											class="w-32 md:mt-4 md:w-full"
+											src="./img/vpn-2.png"
+											alt="img"
+										/>
+									</div>
+									<div class="grid place-content-center md:hidden">
+										<img
+											class="h-auto w-20 shrink-0"
+											src="./img/circle-2.png"
+											alt="circle"
+										/>
+									</div>
+								</div>
+
+								<div class="md:w-72 lg:w-[420px]">
+									<ul class="mt-2 flex flex-col gap-1">
+										<li class="flex gap-3">
+											<img src="./img/check.svg" alt="img" />
+											<p class="font-medium">
+												Unbegrenztes Streaming auf Netflix, Amazon Prime und
+												mehr
+											</p>
+										</li>
+										<li class="flex gap-3">
+											<img src="./img/check.svg" alt="img" />
+											<p class="font-medium">
+												Teste kostenlos dank 30 Tage Geld-zurück-Garantie
+											</p>
+										</li>
+										<li class="flex gap-3">
+											<img src="./img/check.svg" alt="img" />
+											<p class="font-medium">
+												Modernste Verschlüsselung und Bedrohungsschutz
+											</p>
+										</li>
+										<li class="flex gap-3">
+											<img src="./img/check.svg" alt="img" />
+											<p class="font-medium">
+												Verbindungsgeschwindigkeit von 6730 MBit/s
+											</p>
+										</li>
+									</ul>
+
+									<div class="mt-4 flex gap-4 pl-8 md:gap-3">
+										<p class="font-bold">Verfügbar auf</p>
+										<ul class="flex items-center gap-2">
+											<li><img src="./img/hero-icon-1.svg" alt="icon" /></li>
+											<li><img src="./img/hero-icon-2.svg" alt="icon" /></li>
+											<li><img src="./img/hero-icon-3.svg" alt="icon" /></li>
+											<li><img src="./img/hero-icon-4.svg" alt="icon" /></li>
+											<li><img src="./img/hero-icon-5.svg" alt="icon" /></li>
+										</ul>
+									</div>
+								</div>
+
+								<div
+									class="hidden md:flex md:w-32 md:items-center md:justify-center lg:w-44"
+								>
+									<img
+										class="w-[105px]"
+										src="./img/circle-2-large.png"
+										alt="img"
+									/>
+								</div>
+
+								<div
+									class="md:flex md:flex-col-reverse md:justify-center lg:w-[200px]"
+								>
+									<a
+										class="hidden justify-center text-sm font-medium text-link-color underline md:flex"
+										target="_blank"
+										href="https://vpn-scrty.com/?E=y%2FE0%2B9YrZGGt%2B7CuO3lLFwewgcMx3Lvc&s1=vecom&s2=direct&s5=2~1clickout~2lp-more-info-link-lean~3NordVPN&s4=1670-olZhSGEslgEySuZrYWPKNau0"
+									>
+										nordvpn.com
+									</a>
+									<a
+										class="my-3 flex items-center justify-center gap-5 rounded bg-secondary-dark py-4 text-lg font-bold uppercase leading-none text-white shadow-button hover:bg-secondary md:p-3 lg:gap-3 lg:p-4"
+										target="_blank"
+										href="https://vpn-scrty.com/?E=y%2FE0%2B9YrZGGt%2B7CuO3lLFwewgcMx3Lvc&s1=vecom&s2=direct&s5=2~1clickout~2lp-more-info-link-lean~3NordVPN&s4=1670-olZhSGEslgEySuZrYWPKNau0"
+									>
+										<span class="md:text-center">Zum Anbieter</span>
+										<img src="./img/lnk-arrow.svg" alt="icon" />
+									</a>
+								</div>
+							</div>
+
+							<!-- VPN Item -->
+							<div
+								class="relative rounded border border-gray-200 p-5 shadow-light md:flex md:justify-between md:gap-2 lg:px-10"
+							>
+								<div
+									class="absolute left-[-2px] top-[-2px] z-10 flex h-8 overflow-hidden rounded-br rounded-tl bg-secondary-light"
+								>
+									<span
+										class="flex w-10 items-center justify-center bg-primary text-xl text-white"
+									>
+										3
+									</span>
+								</div>
+
+								<div
+									class="mt-7 grid grid-cols-2 gap-3 md:w-32 md:shrink-0 md:grid-cols-1 lg:w-40"
+								>
+									<div class="grid place-content-center md:place-content-start">
+										<img
+											class="w-32 md:mt-6 md:w-full"
+											src="./img/vpn-3.png"
+											alt="img"
+										/>
+									</div>
+									<div class="grid place-content-center md:hidden">
+										<img
+											class="h-auto w-20 shrink-0"
+											src="./img/circle-3.png"
+											alt="circle"
+										/>
+									</div>
+								</div>
+
+								<div class="md:w-72 lg:w-[420px]">
+									<ul class="mt-2 flex flex-col gap-1">
+										<li class="flex gap-3">
+											<img src="./img/check.svg" alt="img" />
+											<p class="font-medium">Server in 60 Ländern</p>
+										</li>
+										<li class="flex gap-3">
+											<img src="./img/check.svg" alt="img" />
+											<p class="font-medium">Bis zu 10 Geräte zeitgleich</p>
+										</li>
+										<li class="flex gap-3">
+											<img src="./img/close.svg" alt="img" />
+											<p class="font-medium">Im Vergleich längere Ladezeiten</p>
+										</li>
+										<li class="flex gap-3">
+											<img src="./img/close.svg" alt="img" />
+											<p class="font-medium">
+												Kundensupport ist nur eingeschränkt erreichbar
+											</p>
+										</li>
+									</ul>
+
+									<div class="mt-4 flex gap-4 pl-8 md:gap-3">
+										<p class="font-bold">Verfügbar auf</p>
+										<ul class="flex items-center gap-2">
+											<li><img src="./img/hero-icon-1.svg" alt="icon" /></li>
+											<li><img src="./img/hero-icon-2.svg" alt="icon" /></li>
+											<li><img src="./img/hero-icon-3.svg" alt="icon" /></li>
+											<li><img src="./img/hero-icon-4.svg" alt="icon" /></li>
+											<li><img src="./img/hero-icon-5.svg" alt="icon" /></li>
+										</ul>
+									</div>
+								</div>
+
+								<div
+									class="hidden md:flex md:w-32 md:items-center md:justify-center lg:w-44"
+								>
+									<img
+										class="w-[110px]"
+										src="./img/circle-3-large.png"
+										alt="img"
+									/>
+								</div>
+
+								<div
+									class="md:flex md:flex-col-reverse md:justify-center lg:w-[200px]"
+								>
+									<a
+										class="hidden justify-center text-sm font-medium text-link-color underline md:flex"
+										target="_blank"
+										href="http://vpn-scrty.com/?E=08pRTPmNLTdl0y%2B58sQy74DJvnvQLLHL&s1=vecom&s2=direct&s5=3~1clickout~2lp-more-info-link-lean~3Private Internet Access&s4=2263-soZkIGXzlIyy5XZakWJ3NQi0"
+									>
+										privateinternetaccess.com
+									</a>
+									<a
+										class="my-3 flex items-center justify-center gap-5 rounded bg-secondary-dark py-4 text-lg font-bold uppercase leading-none text-white shadow-button hover:bg-secondary md:p-3 lg:gap-3 lg:p-4"
+										target="_blank"
+										href="http://vpn-scrty.com/?E=08pRTPmNLTdl0y%2B58sQy74DJvnvQLLHL&s1=vecom&s2=direct&s5=3~1clickout~2lp-more-info-link-lean~3Private Internet Access&s4=2263-soZkIGXzlIyy5XZakWJ3NQi0"
+									>
+										<span class="md:text-center">Zum Anbieter</span>
+										<img src="./img/lnk-arrow.svg" alt="icon" />
+									</a>
+								</div>
+							</div>
+
+							<!-- VPN Item -->
+							<div
+								class="relative rounded border border-gray-200 p-5 shadow-light md:flex md:justify-between md:gap-2 lg:px-10"
+							>
+								<div
+									class="absolute left-[-2px] top-[-2px] z-10 flex h-8 overflow-hidden rounded-br rounded-tl bg-secondary-light"
+								>
+									<span
+										class="flex w-10 items-center justify-center bg-primary text-xl text-white"
+									>
+										4
+									</span>
+								</div>
+
+								<div
+									class="mt-7 grid grid-cols-2 gap-3 md:w-32 md:shrink-0 md:grid-cols-1 lg:w-40"
+								>
+									<div class="grid place-content-center md:place-content-start">
+										<img
+											class="w-32 md:-mt-2 md:w-full"
+											src="./img/vpn-4.png"
+											alt="img"
+										/>
+									</div>
+									<div class="grid place-content-center md:hidden">
+										<img
+											class="h-auto w-20 shrink-0"
+											src="./img/circle-4.png"
+											alt="circle"
+										/>
+									</div>
+								</div>
+
+								<div class="md:w-72 lg:w-[420px]">
+									<ul class="mt-2 flex flex-col gap-1">
+										<li class="flex gap-3">
+											<img src="./img/check.svg" alt="img" />
+											<p class="font-medium">3200+ Server in 100 Ländern</p>
+										</li>
+										<li class="flex gap-3">
+											<img src="./img/check.svg" alt="img" />
+											<p class="font-medium">Viele Geräte verbinden</p>
+										</li>
+										<li class="flex gap-3">
+											<img src="./img/close.svg" alt="img" />
+											<p class="font-medium">
+												Teils gedrosselte Surfgeschwindigkeit
+											</p>
+										</li>
+										<li class="flex gap-3">
+											<img src="./img/close.svg" alt="img" />
+											<p class="font-medium">
+												Kundensupport ist verbesserungswürdig
+											</p>
+										</li>
+									</ul>
+								</div>
+
+								<div
+									class="hidden md:flex md:w-32 md:items-center md:justify-center lg:w-44"
+								>
+									<img
+										class="w-[110px]"
+										src="./img/circle-4-large.png"
+										alt="img"
+									/>
+								</div>
+
+								<div
+									class="md:flex md:flex-col-reverse md:justify-center lg:w-[200px]"
+								>
+									<a
+										class="hidden justify-center text-sm font-medium text-link-color underline md:flex"
+										target="_blank"
+										href="https://vpn-scrty.com/?E=AGABKgM%2BMovfXi76bzHH0aEO908cnc8Q&s1=vecom&s2=direct&s5=4~1clickout~2lp-more-info-link-lean~3Surfshark%20VPN&s4=1706-G9ZA0GMulYwyibZMBW3VNu00"
+									>
+										surfshark.com
+									</a>
+									<a
+										class="my-3 flex items-center justify-center gap-5 rounded bg-secondary-dark py-4 text-lg font-bold uppercase leading-none text-white shadow-button hover:bg-secondary md:p-3 lg:gap-3 lg:p-4"
+										target="_blank"
+										href="https://vpn-scrty.com/?E=AGABKgM%2BMovfXi76bzHH0aEO908cnc8Q&s1=vecom&s2=direct&s5=4~1clickout~2lp-more-info-link-lean~3Surfshark%20VPN&s4=1706-G9ZA0GMulYwyibZMBW3VNu00"
+									>
+										<span class="md:text-center">Zum Anbieter</span>
+										<img src="./img/lnk-arrow.svg" alt="icon" />
+									</a>
+								</div>
+							</div>
+
+							<!-- VPN Item -->
+							<div
+								class="relative rounded border border-gray-200 p-5 shadow-light md:flex md:justify-between md:gap-2 lg:px-10"
+							>
+								<div
+									class="absolute left-[-2px] top-[-2px] z-10 flex h-8 overflow-hidden rounded-br rounded-tl bg-secondary-light"
+								>
+									<span
+										class="flex w-10 items-center justify-center bg-primary text-xl text-white"
+									>
+										5
+									</span>
+								</div>
+
+								<div
+									class="mt-7 grid grid-cols-2 gap-3 md:w-32 md:shrink-0 md:grid-cols-1 lg:w-40"
+								>
+									<div class="grid place-content-center md:place-content-start">
+										<img
+											class="w-32 md:-mt-2 md:w-full"
+											src="./img/vpn-5.png"
+											alt="img"
+										/>
+									</div>
+									<div class="grid place-content-center md:hidden">
+										<img
+											class="h-auto w-20 shrink-0"
+											src="./img/circle-5.png"
+											alt="circle"
+										/>
+									</div>
+								</div>
+
+								<div class="md:w-72 lg:w-[420px]">
+									<ul class="mt-2 flex flex-col gap-1">
+										<li class="flex gap-3">
+											<img src="./img/check.svg" alt="img" />
+											<p class="font-medium">VPN-Server in 94 Ländern</p>
+										</li>
+										<li class="flex gap-3">
+											<img src="./img/close.svg" alt="img" />
+											<p class="font-medium">
+												Wenige Geräte gleichzeitig nutzbar
+											</p>
+										</li>
+										<li class="flex gap-3">
+											<img src="./img/close.svg" alt="img" />
+											<p class="font-medium">Vergleichsweise hoher Preis</p>
+										</li>
+										<li class="flex gap-3">
+											<img src="./img/close.svg" alt="img" />
+											<p class="font-medium">Keine dedizierte IP-Adresse</p>
+										</li>
+									</ul>
+								</div>
+
+								<div
+									class="hidden md:flex md:w-32 md:items-center md:justify-center lg:w-44"
+								>
+									<img
+										class="w-[110px]"
+										src="./img/circle-5-large.png"
+										alt="img"
+									/>
+								</div>
+
+								<div
+									class="md:flex md:flex-col-reverse md:justify-center lg:w-[200px]"
+								>
+									<a
+										class="hidden justify-center text-sm font-medium text-link-color underline md:flex"
+										target="_blank"
+										href="https://vpn-scrty.com/?E=ZHiDb9TfcrlRqCxowYdQXKEO908cnc8Q&s1=vecom&s2=direct&s5=5~1clickout~2lp-more-info-link-lean~3ExpressVPN&s4=1757-3cZfvGJUlZiy3aZDwWupNNH0"
+									>
+										expressvpn.com
+									</a>
+									<a
+										class="my-3 flex items-center justify-center gap-5 rounded bg-secondary-dark py-4 text-lg font-bold uppercase leading-none text-white shadow-button hover:bg-secondary md:p-3 lg:gap-3 lg:p-4"
+										target="_blank"
+										href="https://vpn-scrty.com/?E=ZHiDb9TfcrlRqCxowYdQXKEO908cnc8Q&s1=vecom&s2=direct&s5=5~1clickout~2lp-more-info-link-lean~3ExpressVPN&s4=1757-3cZfvGJUlZiy3aZDwWupNNH0"
+									>
+										<span class="md:text-center">Zum Anbieter</span>
+										<img src="./img/lnk-arrow.svg" alt="icon" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="py-10">
+					<div class="container">
+						<div class="grid gap-5">
+							<!-- Accrodion Item -->
+							<div
+								class="accordion-item group flex cursor-pointer flex-col rounded border border-gray-200 shadow-faq"
+							>
+								<!-- Accrodion Trigger -->
+								<div
+									class="accordion-trigger flex w-full items-center justify-between py-6 px-4 md:px-11"
+								>
+									<span class="text-lg font-semibold">
+										Was ist ein VPN und wie funktioniert es?
+									</span>
+									<!-- Icon -->
+									<div class="flex">
+										<!-- Plus icon -->
+										<div class="w-4">
+											<span
+												class="flex h-[2px] translate-y-[2px] rotate-90 bg-black transition-transform group-[.active]:rotate-0"
+											></span>
+											<span class="flex h-[2px] bg-black"></span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Accrodion Content -->
+								<div
+									class="accordion-content hidden border-t border-t-gray-200 py-5 px-4 md:px-11"
+								>
+									<div class="flex flex-col gap-4">
+										<p>
+											Bei einem virtuellen privaten Netzwerk handelt es sich um
+											eine sichere Verbindung, über die der Benutzer Daten
+											mithilfe eines öffentlichen Netzwerks senden und empfangen
+											kann. Sie setzen sich bestimmten Datenschutz- und
+											Sicherheitsrisiken aus, wenn Sie sich mit Ihrem
+											Smartphone, Tablet oder PC ohne VPN mit dem Internet
+											verbinden. VPNs gewährleisten aber Ihre Sicherheit und
+											Privatsphäre, sobald Sie sich online bewegen.
+										</p>
+										<p>
+											Durch die Verbindung über ein VPN, werden die zu sendenden
+											Datenpakete zunächst verschlüsselt, noch bevor das
+											öffentliche Netzwerk diese überhaupt sieht. Die
+											verschlüsselten Daten werden an einen VPN-Server
+											übertragen, der diese Daten dann an das Ziel weiterleitet.
+											Der VPN-Server stellt Ihre Anonymität sicher, da Ihre
+											IP-Adresse verborgen wird und die Übertragung stattdessen
+											die Adresse des VPN-Servers trägt. Sie können im Internet
+											surfen, während Ihr VPN einen anderen Standort anzeigt,
+											als den, an dem Sie sich tatsächlich befinden.
+										</p>
+										<p class="text-center">
+											<a class="scroll-top" href="#">Zum Ranking</a>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Accrodion Item -->
+							<div
+								class="accordion-item group flex cursor-pointer flex-col rounded border border-gray-200 shadow-faq"
+							>
+								<!-- Accrodion Trigger -->
+								<div
+									class="accordion-trigger flex w-full items-center justify-between py-6 px-4 md:px-11"
+								>
+									<span class="text-lg font-semibold">
+										Was kann ein VPN und welche Vorteile bietet es?
+									</span>
+									<!-- Icon -->
+									<div class="flex">
+										<!-- Plus icon -->
+										<div class="w-4">
+											<span
+												class="flex h-[2px] translate-y-[2px] rotate-90 bg-black transition-transform group-[.active]:rotate-0"
+											></span>
+											<span class="flex h-[2px] bg-black"></span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Accrodion Content -->
+								<div
+									class="accordion-content hidden border-t border-t-gray-200 py-5 px-4 md:px-11"
+								>
+									<div class="flex flex-col gap-4">
+										<p>
+											Aufgrund unserer technisch fortgeschrittenen Welt ist die
+											Netzwerksicherheit heutzutage essenziell. Durch die
+											Nutzung eines VPNs können Sie sich während Ihrer
+											Online-Aktivitäten vor Eindringlingen und Spionen
+											schützen. Es hat aber noch viel mehr nützliche Funktionen.
+											Nachfolgend finden Sie einige Vorteile eines VPNs:
+										</p>
+										<p class="-mb-2 flex items-center gap-5">
+											<span
+												class="flex h-2 w-2 rounded-full bg-primary-text"
+											></span>
+											<b>Verbesserung der Sicherheit</b>
+										</p>
+										<p>
+											Durch die Verbindung über ein VPN, werden die zu sendenden
+											Datenpakete zunächst verschlüsselt, noch bevor das
+											öffentliche Netzwerk diese überhaupt sieht. Die
+											verschlüsselten Daten werden an einen VPN-Server
+											übertragen, der diese Daten dann an das Ziel weiterleitet.
+											Der VPN-Server stellt Ihre Anonymität sicher, da Ihre
+											IP-Adresse verborgen wird und die Übertragung stattdessen
+											die Adresse des VPN-Servers trägt. Sie können im Internet
+											surfen, während Ihr VPN einen anderen Standort anzeigt,
+											als den, an dem Sie sich tatsächlich befinden.
+										</p>
+
+										<p class="-mb-2 flex items-center gap-5">
+											<span
+												class="flex h-2 w-2 rounded-full bg-primary-text"
+											></span>
+											<b>Anonymität</b>
+										</p>
+										<p>
+											Dank des VPNs können Sie sich frei im Internet bewegen,
+											ohne sich über die Offenlegung Ihrer Identität sorgen zu
+											müssen. Anonymität ist auch bei der Nutzung von Websites
+											und Apps äußerst wichtig. Es gibt bestimmte
+											Online-Aktivitäten (keine betrügerischen), von denen wir
+											in der Regel nicht möchten, dass sie zu uns zurückverfolgt
+											werden können.
+										</p>
+
+										<p class="-mb-2 flex items-center gap-5">
+											<span
+												class="flex h-2 w-2 rounded-full bg-primary-text"
+											></span>
+											<b>Fernbedienung und Zugriff</b>
+										</p>
+										<p>
+											Sie können ein VPN für eine sichere Remote-Verbindung
+											verwenden. Hierbei handelt es sich um die ideale Lösung
+											für Unternehmen, da es Mitarbeitern dadurch ermöglicht
+											wird, auch von zu Hause zu arbeiten.
+										</p>
+
+										<p class="-mb-2 flex items-center gap-5">
+											<span
+												class="flex h-2 w-2 rounded-full bg-primary-text"
+											></span>
+											<b>Änderung der IP-Adresse</b>
+										</p>
+										<p>
+											Sie können Ihre IP-Adresse beim Surfen im Internet
+											verbergen. Diese Funktion ermöglicht es Ihnen auch, auf
+											bestimmte Websites zuzugreifen, auf denen IP-Adressen von
+											bestimmten Standorten blockiert werden
+										</p>
+										<p class="text-center">
+											<a class="scroll-top" href="#">Zum Ranking</a>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Accrodion Item -->
+							<div
+								class="accordion-item group flex cursor-pointer flex-col rounded border border-gray-200 shadow-faq"
+							>
+								<!-- Accrodion Trigger -->
+								<div
+									class="accordion-trigger flex w-full items-center justify-between py-6 px-4 md:px-11"
+								>
+									<span class="text-lg font-semibold">
+										Wie stelle ich eine VPN-Verbindung her?
+									</span>
+									<!-- Icon -->
+									<div class="flex">
+										<!-- Plus icon -->
+										<div class="w-4">
+											<span
+												class="flex h-[2px] translate-y-[2px] rotate-90 bg-black transition-transform group-[.active]:rotate-0"
+											></span>
+											<span class="flex h-[2px] bg-black"></span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Accrodion Content -->
+								<div
+									class="accordion-content hidden border-t border-t-gray-200 py-5 px-4 md:px-11"
+								>
+									<div class="flex flex-col gap-4">
+										<p>
+											Die folgenden Anweisungen erläutern, wie Sie eine
+											VPN-Verbindung auf Ihrem Handy oder PC herstellen können:
+										</p>
+										<p class="-mb-2 flex items-center gap-5">
+											<b>1.</b>
+											<b>Verbesserung der Sicherheit</b>
+										</p>
+										<p>
+											Wenn Sie sich mit VPNs noch nicht auskennen, empfehlen wir
+											Ihnen, zunächst nur vertrauenswürdige Top-Anbieter zu
+											verwenden. Darüber hinaus raten wir Ihnen, sich für
+											kostenpflichtige VPNs zu entscheiden. Die Preise sollten
+											jedoch vernünftig sein. In unserer Liste finden Sie
+											vertrauenswürdige Anbieter, die nicht teuer sind.
+										</p>
+
+										<p class="-mb-2 flex items-center gap-5">
+											<b>2.</b>
+											<b>Erstellen Sie ein Konto</b>
+										</p>
+										<p>
+											Bei kostenpflichtigen VPNs besteht die Möglichkeit, dass
+											ein Anbieter Sie dazu auffordert, ein Konto zu erstellen,
+											über das Sie dann Ihren Kauf tätigen können.
+										</p>
+
+										<p class="-mb-2 flex items-center gap-5">
+											<b>3.</b>
+											<b>
+												Laden Sie den VPN-Client herunter und installieren Sie
+												ihn auf Ihrem Gerät
+											</b>
+										</p>
+										<p>
+											Besuchen Sie die Seite Ihres bevorzugten Anbieters und
+											laden Sie einen VPN-Client herunter, der sich für Ihr
+											Betriebssystem eignet - Windows, iOS oder Android.
+										</p>
+
+										<p class="-mb-2 flex items-center gap-5">
+											<b>4.</b>
+											<b>Melden Sie sich an oder aktivieren Sie das VPN</b>
+										</p>
+										<p>
+											Sie müssen sich womöglich registrieren, um die
+											Premiumversion des VPN zu aktivieren. Darüber hinaus kann
+											es möglich sein, dass ein kostenpflichtiges VPN eine
+											Seriennummer oder Lizenz zur Aktivierung anfordert. Einige
+											Anbieter bieten für einen begrenzten Zeitraum ihren Dienst
+											auch kostenlos an.
+										</p>
+
+										<p class="-mb-2 flex items-center gap-5">
+											<b>5.</b>
+											<b>Richten Sie andere VPN-Grundeinstellungen ein</b>
+										</p>
+										<p>
+											Das VPN kann in der Regel sofort nach der Anmeldung
+											benutzt werden. Sie müssen aber eventuell einige
+											notwendige Änderungen vornehmen, z.B. indem Sie
+											entscheiden, welches Land Ihre IP-Adresse angeben soll.
+										</p>
+										<p class="text-center">
+											<a class="scroll-top" href="#">Zum Ranking</a>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Accrodion Item -->
+							<div
+								class="accordion-item group flex cursor-pointer flex-col rounded border border-gray-200 shadow-faq"
+							>
+								<!-- Accrodion Trigger -->
+								<div
+									class="accordion-trigger flex w-full items-center justify-between py-6 px-4 md:px-11"
+								>
+									<span class="text-lg font-semibold">
+										Was sind die Unterschiede zwischen kostenlosen und
+										kostenpflichtigen VPNs?
+									</span>
+									<!-- Icon -->
+									<div class="flex">
+										<!-- Plus icon -->
+										<div class="w-4">
+											<span
+												class="flex h-[2px] translate-y-[2px] rotate-90 bg-black transition-transform group-[.active]:rotate-0"
+											></span>
+											<span class="flex h-[2px] bg-black"></span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Accrodion Content -->
+								<div
+									class="accordion-content hidden border-t border-t-gray-200 py-5 px-4 md:px-11"
+								>
+									<div class="flex flex-col gap-4">
+										<p>
+											Nachfolgend finden Sie einige wesentliche Unterschiede
+											zwischen kostenlosen und kostenpflichtigen VPNs
+										</p>
+										<p class="-mb-2 flex items-center gap-5">
+											<span
+												class="flex h-2 w-2 rounded-full bg-primary-text"
+											></span>
+											<b>Zuverlässigkeit</b>
+										</p>
+										<p>
+											Ein zuverlässiger VPN-Dienst erfordert zahlreiche
+											zusätzliche Dienste und Funktionen, die man nicht einfach
+											kostenlos erhält. Das bedeutet, dass ein kostenloses VPN
+											entweder nicht vollständig kostenlos ist oder lediglich
+											eingeschränkte Dienste mit schwacher Sicherheit bietet. In
+											diesem Fall sind Sie womöglich nicht so sicher, wie Sie
+											denken.
+										</p>
+
+										<p class="-mb-2 flex items-center gap-5">
+											<span
+												class="flex h-2 w-2 rounded-full bg-primary-text"
+											></span>
+											<b>Werbung</b>
+										</p>
+										<p>
+											Kostenlose VPNs sind bekannt für ihren Überfluss an
+											Werbung, wodurch jedes Surferlebnis zu einem Ärgernis
+											wird. Hierbei handelt es sich um ein bekanntes Problem, da
+											die VPNs Einnahmen erzielen müssen, um ihre Dienste weiter
+											am Laufen zu halten. Das Schalten von Werbeanzeigen zählt
+											zu den beliebtesten Methoden, mit denen diese Anbieter
+											Umsätze generieren.
+										</p>
+
+										<p class="-mb-2 flex items-center gap-5">
+											<span
+												class="flex h-2 w-2 rounded-full bg-primary-text"
+											></span>
+											<b>Geschwindigkeit der Verbindung</b>
+										</p>
+										<p>
+											Kostenlose VPNs verlangsamen oftmals Ihre
+											Internetverbindung. Das kommt davon, dass diese Anbieter
+											nur über sehr wenige Server verfügen, die sie aber
+											weiterhin einer Vielzahl von Kunden anbieten, auch wenn
+											die Server bereits überlastet sind. Kostenpflichtige VPNs
+											besitzen in der Regel mehrere Server an verschiedenen
+											Standorten, wodurch Kunden eine erstklassige Verbindung
+											und Geschwindigkeit erhalten.
+										</p>
+
+										<p class="-mb-2 flex items-center gap-5">
+											<span
+												class="flex h-2 w-2 rounded-full bg-primary-text"
+											></span>
+											<b>Zusätzliche Funktionen</b>
+										</p>
+										<p>
+											Neben wichtigen VPN-Diensten bieten kostenpflichtige
+											Anbieter häufig großartige Zusatzfunktionen an, um die
+											Online-Sicherheit und Anonymität der Benutzer zu
+											verbessern. Die Möglichkeiten eines kostenlosen VPN sind
+											jedoch äußerst begrenzt.
+										</p>
+										<p class="text-center">
+											<a class="scroll-top" href="#">Zum Ranking</a>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Accrodion Item -->
+							<div
+								class="accordion-item group flex cursor-pointer flex-col rounded border border-gray-200 shadow-faq"
+							>
+								<!-- Accrodion Trigger -->
+								<div
+									class="accordion-trigger flex w-full items-center justify-between py-6 px-4 md:px-11"
+								>
+									<span class="text-lg font-semibold">
+										Auf welchen Geräten und Betriebssystemen kann ich mein VPN
+										verwenden?
+									</span>
+									<!-- Icon -->
+									<div class="flex">
+										<!-- Plus icon -->
+										<div class="w-4">
+											<span
+												class="flex h-[2px] translate-y-[2px] rotate-90 bg-black transition-transform group-[.active]:rotate-0"
+											></span>
+											<span class="flex h-[2px] bg-black"></span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Accrodion Content -->
+								<div
+									class="accordion-content hidden border-t border-t-gray-200 py-5 px-4 md:px-11"
+								>
+									<div class="flex flex-col gap-4">
+										<p>
+											Sie können Ihr VPN auf jedem Betriebssystem verwenden,
+											egal ob Windows, MacOS, Linux, Android oder iOS.
+											VPN-Clients eignen sich für verschiedene Geräte wie
+											Laptops, PCs, Handys und Tablets.
+										</p>
+										<p class="text-center">
+											<a class="scroll-top" href="#">Zum Ranking</a>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Accrodion Item -->
+							<div
+								class="accordion-item group flex cursor-pointer flex-col rounded border border-gray-200 shadow-faq"
+							>
+								<!-- Accrodion Trigger -->
+								<div
+									class="accordion-trigger flex w-full items-center justify-between py-6 px-4 md:px-11"
+								>
+									<span class="text-lg font-semibold">
+										Warum wird mein VPN in dieser Liste nicht erwähnt?
+									</span>
+									<!-- Icon -->
+									<div class="flex">
+										<!-- Plus icon -->
+										<div class="w-4">
+											<span
+												class="flex h-[2px] translate-y-[2px] rotate-90 bg-black transition-transform group-[.active]:rotate-0"
+											></span>
+											<span class="flex h-[2px] bg-black"></span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Accrodion Content -->
+								<div
+									class="accordion-content hidden border-t border-t-gray-200 py-5 px-4 md:px-11"
+								>
+									<div class="flex flex-col gap-4">
+										<p>
+											Unsere Liste enthält die marktführenden VPN-Anbieter. Es
+											gibt jedoch zahlreiche Anbieter - genug, um Gefahr zu
+											laufen, die falsche Wahl zu treffen. Wir stellen jedoch
+											seriöse Anbieter vor, die sich in der Vergangenheit durch
+											hochwertige Dienste für Kunden etabliert haben.
+										</p>
+										<p class="text-center">
+											<a class="scroll-top" href="#">Zum Ranking</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<a
+				id="scroll-top"
+				href="#"
+				class="fixed right-5 bottom-5 hidden h-10 w-10 items-center justify-center rounded bg-primary-text"
+			>
+				<img class="h-5 w-5" src="./img/scroll-top.svg" alt="img" />
+			</a>
+
+			<div>
+				<div
+					id="modal"
+					class="fixed left-0 top-0 z-10 hidden h-screen w-screen items-center justify-center bg-[#00182a99] md:hidden"
+				>
+					<!-- Modal -->
+					<div class="relative w-[490px] rounded-md bg-white py-4 px-3">
+						<!-- Close Btn -->
+						<button
+							class="absolute -right-3 -top-3 flex h-6 w-6 items-center justify-center rounded-full bg-white shadow-sm"
+						>
+							<svg
+								id="close-btn"
+								class="h-2.5 w-2.5"
+								viewBox="0 0 28 28"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									class="fill-link-color transition-colors group-hover:fill-blue-400"
+									d="M17.3145 13.9999L26.5918 4.72257C27.0321 4.28305 27.2798 3.68662 27.2804 3.06449C27.2809 2.44236 27.0343 1.84549 26.5948 1.40519C26.1552 0.964888 25.5588 0.717221 24.9367 0.716672C24.3145 0.716122 23.7177 0.962735 23.2774 1.40226L14 10.6796L4.72269 1.40226C4.28239 0.961958 3.68522 0.7146 3.06254 0.7146C2.43986 0.7146 1.84268 0.961958 1.40238 1.40226C0.96208 1.84256 0.714722 2.43974 0.714722 3.06242C0.714722 3.68509 0.96208 4.28227 1.40238 4.72257L10.6797 13.9999L1.40238 23.2773C0.96208 23.7176 0.714722 24.3147 0.714722 24.9374C0.714722 25.5601 0.96208 26.1573 1.40238 26.5976C1.84268 27.0379 2.43986 27.2852 3.06254 27.2852C3.68522 27.2852 4.28239 27.0379 4.72269 26.5976L14 17.3202L23.2774 26.5976C23.7177 27.0379 24.3149 27.2852 24.9375 27.2852C25.5602 27.2852 26.1574 27.0379 26.5977 26.5976C27.038 26.1573 27.2854 25.5601 27.2854 24.9374C27.2854 24.3147 27.038 23.7176 26.5977 23.2773L17.3145 13.9999Z"
+								/>
+							</svg>
+						</button>
+
+						<!-- Content -->
+						<div class="grid grid-cols-2 gap-5">
+							<div>
+								<p class="text-xs text-offer-color">EXKLUSIVES ANGEBOT</p>
+								<h3 class="mt-4 text-3xl font-semibold">
+									45 Tage lang risikofrei testen
+								</h3>
+								<p class="mt-3">TOP VPN 2024</p>
+								<p class="mt-8 text-xs font-semibold">
+									ANGEBOT FÜR BEGRENZTE ZEIT:
+								</p>
+
+								<div class="mt-2 grid grid-cols-3 gap-4">
+									<div class="flex flex-col items-center">
+										<p class="text-3xl font-semibold" id="hours">00</p>
+										<p class="text-xs uppercase">Stunden</p>
+									</div>
+									<div class="flex flex-col items-center">
+										<p class="text-3xl font-semibold" id="minutes">35</p>
+										<p class="text-xs uppercase">Minuten</p>
+									</div>
+									<div class="flex flex-col items-center">
+										<p class="text-3xl font-semibold" id="seconds">16</p>
+										<p class="text-xs uppercase">Sekunden</p>
+									</div>
+								</div>
+
+								<a
+									class="mt-4 flex items-center justify-center rounded bg-secondary-dark p-4 font-bold text-white hover:bg-secondary"
+									href="#"
+								>
+									Zum Angebot
+								</a>
+							</div>
+							<a class="flex flex-col items-center gap-5" href="#">
+								<img src="./img/vpn-1.svg" alt="img" />
+								<img src="./img/modal-2.svg" alt="img" />
+								<img class="w-20" src="./img/modal-3.png" alt="img" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer -->
+			<footer class="border-t border-t-slate-700 sm:mt-14 md:mt-24">
+				<div class="container">
+					<div class="grid gap-5 px-4 pt-10 pb-5 md:grid-cols-2">
+						<div
+							class="grid place-content-center md:order-1 md:place-content-start"
+						>
+							<a href="#"><img src="./img/logo.svg" alt="logo" /></a>
+						</div>
+						<div class="order-3 md:order-2">
+							<p class="text-center text-sm font-medium md:text-right">
+								© 2024. vpn-experte.com All rights reserved
+							</p>
+						</div>
+						<div
+							class="border-b border-b-gray-400 pb-5 md:order-3 md:col-span-2 md:border-b-0 md:border-t md:border-t-gray-400 md:pb-0 md:pt-5"
+						>
+							<nav>
+								<ul
+									class="flex flex-wrap justify-center gap-x-10 gap-y-4 md:justify-start"
+								>
+									<li>
+										<a
+											class="text-sm text-lightgray hover:text-primary-text"
+											href="#"
+										>
+											Nutzungsbedingungen
+										</a>
+									</li>
+									<li>
+										<a
+											class="text-sm text-lightgray hover:text-primary-text"
+											href="#"
+										>
+											Datenschutzerklärung
+										</a>
+									</li>
+									<li>
+										<a
+											class="text-sm text-lightgray hover:text-primary-text"
+											href="#"
+										>
+											Cookie-Richtlinien
+										</a>
+									</li>
+									<li>
+										<a
+											class="text-sm text-lightgray hover:text-primary-text"
+											href="#"
+										>
+											Impressum
+										</a>
+									</li>
+									<li>
+										<a
+											class="text-sm text-lightgray hover:text-primary-text"
+											href="#"
+										>
+											Über Uns
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- JS -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>
