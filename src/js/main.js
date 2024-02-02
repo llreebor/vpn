@@ -96,7 +96,7 @@ function toggleModal() {
 		modal.classList.toggle('md:flex')
 	})
 }
-toggleModal()
+// toggleModal()
 // Animations
 /* SLIDE UP */
 let slideUp = (target, duration = 300) => {

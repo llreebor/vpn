@@ -1,0 +1,11 @@
+.out_score {
+	display: block;
+	font-size: 48px;
+	line-height: 48px;
+	color: #0e3150;
+}
+.comparison-item .col-post-score,
+.table-comparison-header .col-post-score {
+	flex: 0 0 20%;
+	max-width: 20%;
+}

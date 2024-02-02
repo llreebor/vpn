@@ -4,8 +4,21 @@ module.exports = {
 	darkMode: 'class',
 	theme: {
 		container: {
+			// you can configure the container to be centered
 			center: true,
+			// or have default horizontal padding
 			padding: '15px',
+			// default breakpoints but with 40px removed
+			screens: {
+				sm: '768px',
+				md: '992px',
+				lg: '1140px',
+			},
+		},
+		screens: {
+			sm: '768px',
+			md: '992px',
+			lg: '1140px',
 		},
 
 		extend: {
